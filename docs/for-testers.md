@@ -8,7 +8,7 @@ Test whether an agent can notice potentially relevant patterns in user-authorize
 
 ## Participant setup
 
-1. Open `/chat-analysis.html` and copy the test prompt.
+1. Open https://medtests-webmcp-testers.rhp9frgrbw.chatgpt.site and copy the test prompt.
 2. Use only your own chats or material whose owner explicitly authorized this test.
 3. Choose a small date range and remove names, company secrets, patient data, and identifying third-party details.
 4. Tell the agent one symptom or change to trace, such as sleep disruption, exhaustion, loss of control, persistent worry, or difficulty focusing.
@@ -17,19 +17,19 @@ Test whether an agent can notice potentially relevant patterns in user-authorize
 ## Copy/paste prompt
 
 ```text
-Hilf mir, mögliche Muster hinter meinen beschriebenen Symptomen zu verstehen. Stelle keine Diagnose und behaupte keine Ursache als bewiesen.
+Help me understand possible patterns behind the symptoms I describe. Do not diagnose me or claim that any cause is proven.
 
-Bevor du analysierst, frage mich einzeln:
-1. Sollst du nur diesen Chat, meine übrigen Chats in diesem Dienst oder zusätzlich von mir bereitgestellte Exporte aus ChatGPT, Claude, Codex, Gemini oder anderen Diensten verwenden?
-2. Welche Quellen und welchen Zeitraum gebe ich ausdrücklich frei?
-3. Welche Symptome oder Veränderungen sollst du verfolgen, und wann begannen sie?
-4. Sind Namen und identifizierende Angaben Dritter entfernt?
+Before analyzing, ask me one question at a time:
+1. Should you use only this chat, my other chats in this service, or exports I provide from ChatGPT, Claude, Codex, Gemini, or another service?
+2. Which sources and date range do I explicitly authorize?
+3. Which symptoms or changes should you trace, and when did they begin?
+4. Have names and identifying details about other people been removed?
 
-Analysiere nur ausdrücklich freigegebenes Material. Trenne direkte Beobachtungen von deiner Interpretation. Erstelle eine Zeitlinie und nenne für jede Hypothese stützende Belege, Gegenbelege und fehlende Informationen mit Quelle und Datum. Ordne Hypothesen nach Belegstärke. Hohe Nutzungszeit allein ist kein Krankheitskriterium. Leite niemals aus meinem Prompting-Stil ADHS oder eine andere Erkrankung ab.
+Analyze only explicitly authorized material. Separate direct observations from your interpretation. Build a timeline. For every hypothesis, show supporting evidence, counter-evidence, and missing information, citing the source and date. Rank hypotheses by strength of evidence. High usage time alone is not a health problem. Never infer ADHD or another condition from my prompting style.
 
-Bei einem akuten Verhalten wie einer nächtlichen Session gib zuerst einen schlichten nicht-medizinischen Hinweis. Wenn ein belastendes Muster anhält oder ich darauf eingehe, frage nach Einwilligung und biete einen passenden validierten medtests-Selbsttest an. Verwende nur Instrumenten-Score, Quelle und feste Interpretation; verwandle deine Eindrücke nie in ein Label.
+For an immediate behavior, such as a late-night session, start with a plain non-medical suggestion. If a harmful pattern persists, ask for consent before offering a relevant validated medtests screening. Use only the instrument score, source, and fixed interpretation. Never turn your impressions into a label.
 
-Beende mit: (a) was relativ gut gestützt ist, (b) was unklar bleibt, (c) sichere nächste Schritte oder Fragen für Fachpersonal. Bei Hinweisen auf Realitätsverlust, unmittelbare Gefahr oder Selbstgefährdung: kein Test und keine spekulative Analyse, sondern ausschließlich geprüfte Verweis- und lokale Krisentexte.
+Finish with: (a) what is relatively well supported, (b) what remains unclear, and (c) safe next steps or questions for a qualified professional. If there are signs of immediate danger, self-harm, or possible reality distortion, do not continue normal analysis or offer a test. Use appropriate reviewed referral and local crisis guidance.
 ```
 
 ## Two test cases
