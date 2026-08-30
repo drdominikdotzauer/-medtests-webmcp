@@ -1,0 +1,15 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "medtests-webmcp",
+  "main": "worker/index.js",
+  "compatibility_date": "2026-08-30",
+  "observability": {
+    "enabled": false,
+    "logs": { "invocation_logs": false },
+    "traces": { "enabled": false }
+  },
+  "assets": {
+    "directory": "public",
+    "binding": "ASSETS"
+  }
+}

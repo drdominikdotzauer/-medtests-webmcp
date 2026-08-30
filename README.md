@@ -10,8 +10,11 @@ A standalone, auditable WebMCP demo for privacy-preserving mental-health self-sc
 - `medtests_get_screening`
 - `medtests_score_screening`
 - `medtests_get_crisis_resources`
+- `medtests_get_chat_analysis_protocol`
 
 The browser-native tools call the same-origin MCP endpoint at `/mcp`. A small REST surface is available under `/api/screenings` and `/api/score`.
+
+The optional [chat-context analysis page](https://medtests-webmcp-preview.carpal-cilantro.workers.dev/chat-analysis.html) gives any agent a consent-first prompt for looking for symptom patterns across authorized ChatGPT, Claude, Codex, Gemini, or other transcripts. It separates observations from hypotheses and explicitly forbids diagnosis or causal claims.
 
 ## Safety and privacy
 
