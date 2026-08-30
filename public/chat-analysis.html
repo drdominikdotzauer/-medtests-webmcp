@@ -1,33 +1,32 @@
 <!doctype html>
-<html lang="de">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Chat-Kontext-Analyse · medtests WebMCP</title>
-  <meta name="description" content="Ein sicherer Testprompt für mögliche Symptommuster in freigegebenen ChatGPT-, Claude-, Codex- und Gemini-Verläufen.">
+  <title>For testers · medtests WebMCP</title>
+  <meta name="description" content="A consent-first prompt for testing symptom-pattern analysis across authorized AI chat histories.">
   <style>
     :root{--navy:#102f4a;--ink:#17364f;--muted:#5d6f7b;--mint:#e5f4ee;--paper:#fbfaf6;--coral:#e66f51;--line:#d5e1e5}*{box-sizing:border-box}body{margin:0;font:16px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);background:var(--paper)}main{width:min(900px,calc(100% - 28px));margin:auto;padding:28px 0 64px}a{color:inherit}.top{display:flex;justify-content:space-between;gap:16px}.hero{margin:28px 0;padding:clamp(26px,6vw,54px);border-radius:26px;background:linear-gradient(135deg,var(--mint),#f7f0e5)}h1{font-size:clamp(38px,7vw,68px);line-height:1;letter-spacing:-.045em;margin:10px 0 22px}h2{font-size:28px;margin:0 0 14px}.kicker{font-size:12px;text-transform:uppercase;letter-spacing:.12em;font-weight:800;color:#58776f}.notice,.card{padding:22px;border:1px solid var(--line);border-radius:18px;background:#fff;margin:16px 0}.notice{border-color:#e9c5b7;background:#fff3ed}.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.prompt{padding:24px;border-radius:20px;background:var(--navy);color:#fff}textarea{width:100%;min-height:430px;padding:15px;border-radius:12px;border:1px solid #507087;background:#092439;color:#fff;font:13px/1.5 ui-monospace,monospace}button{border:0;border-radius:999px;padding:11px 16px;background:#9ed8ca;color:#0b2b3f;font-weight:800}.chips{display:flex;flex-wrap:wrap;gap:8px}.chips span{padding:6px 10px;border-radius:999px;background:var(--mint);font-size:13px}@media(max-width:700px){.grid{grid-template-columns:1fr}.top{flex-direction:column}}
   </style>
   <script src="/webmcp.js" defer></script>
 </head>
 <body><main>
-  <div class="top"><strong>medtests.de · WebMCP</strong><a href="/">← Hauptdemo</a></div>
-  <header class="hero"><div class="kicker">For testers · experimentell</div><h1>Was zeigen deine Chats über den Verlauf?</h1><p>Gib diesen Prompt an den Agenten, den du ohnehin verwendest. Er fragt zuerst, welche eigenen Chatverläufe er einbeziehen darf, und untersucht dann mögliche Muster hinter den beschriebenen Symptomen.</p><div class="chips"><span>ChatGPT</span><span>Claude</span><span>Codex</span><span>Gemini</span><span>weitere Exporte</span></div></header>
-  <div class="notice"><strong>Wichtig:</strong> Die Analyse liefert Hypothesen und Gesprächsgrundlagen, keine Diagnose und keinen Beweis für eine Ursache. Hohe KI-Nutzungszeit allein ist kein Krankheitskriterium; relevant sind Beeinträchtigung, Leidensdruck oder Kontrollverlust. Nur eigene oder ausdrücklich freigegebene, anonymisierte Chats verwenden.</div>
-  <div class="grid"><section class="card"><h2>Was der Agent zuerst klären muss</h2><ol><li>Nur aktueller Chat, alle eigenen Chats dieses Dienstes oder zusätzliche Exporte?</li><li>Welche Dienste und welcher Zeitraum sind freigegeben?</li><li>Welche Symptome oder Veränderungen sollen verfolgt werden, und seit wann?</li><li>Sind Namen und Angaben Dritter entfernt?</li></ol></section><section class="card"><h2>Erwartetes Ergebnis</h2><ol><li>Zeitlinie und wiederkehrende Muster</li><li>Mögliche Einflussfaktoren, nach Belegstärke sortiert</li><li>Belege und Gegenbelege mit Quellenangabe</li><li>Unsicherheiten und fehlende Informationen</li><li>Sichere nächste Schritte und Fragen für Fachpersonal</li></ol></section></div>
-  <section class="prompt"><div class="kicker">Prompt zum Teilen</div><h2>For testers</h2><textarea id="analysisPrompt" readonly>Hilf mir, mögliche Muster hinter meinen beschriebenen Symptomen zu verstehen. Stelle keine Diagnose und behaupte keine Ursache als bewiesen.
+  <div class="top"><strong>medtests.de · WebMCP</strong><a href="/">← Main demo</a></div>
+  <header class="hero"><div class="kicker">For testers</div><h1>Does your AI see the right pattern?</h1><p>Copy the prompt. Run it with your AI and your own authorized chat history.</p><div class="chips"><span>ChatGPT</span><span>Claude</span><span>Codex</span><span>Gemini</span><span>other exports</span></div></header>
+  <div class="notice"><strong>Important:</strong> The analysis produces hypotheses, not a diagnosis or proof of causation. High AI usage alone is not a health problem. Use only your own or explicitly authorized, anonymized chats.</div>
+  <section class="prompt"><div class="kicker">Test prompt</div><h2>For testers</h2><textarea id="analysisPrompt" readonly>Help me understand possible patterns behind the symptoms I describe. Do not diagnose me or claim that any cause is proven.
 
-Bevor du analysierst, frage mich einzeln:
-1. Sollst du nur diesen Chat, meine übrigen Chats in diesem Dienst oder zusätzlich von mir bereitgestellte Exporte aus ChatGPT, Claude, Codex, Gemini oder anderen Diensten verwenden?
-2. Welche Quellen und welchen Zeitraum gebe ich ausdrücklich frei?
-3. Welche Symptome oder Veränderungen sollst du verfolgen, und wann begannen sie?
-4. Sind Namen und identifizierende Angaben Dritter entfernt?
+Before analyzing, ask me one question at a time:
+1. Should you use only this chat, my other chats in this service, or exports I provide from ChatGPT, Claude, Codex, Gemini, or another service?
+2. Which sources and date range do I explicitly authorize?
+3. Which symptoms or changes should you trace, and when did they begin?
+4. Have names and identifying details about other people been removed?
 
-Analysiere nur ausdrücklich freigegebenes Material. Trenne direkte Beobachtungen aus den Chats von deiner Interpretation. Erstelle eine Zeitlinie; finde wiederkehrende Muster, Veränderungen und mögliche Einflussfaktoren; nenne für jede Hypothese stützende Belege, Gegenbelege und fehlende Informationen. Ordne Hypothesen nach Belegstärke, nicht nach Dramatik. Verweise bei jedem Beleg auf Quelle und Datum, ohne unnötige personenbezogene Daten zu wiederholen. Hohe Nutzungszeit allein ist kein Krankheitskriterium. Leite niemals aus meinem Prompting-Stil ADHS oder eine andere Erkrankung ab.
+Analyze only explicitly authorized material. Separate direct observations from your interpretation. Build a timeline. For every hypothesis, show supporting evidence, counter-evidence, and missing information, citing the source and date. Rank hypotheses by strength of evidence. High usage time alone is not a health problem. Never infer ADHD or another condition from my prompting style.
 
-Interventionsleiter: Bei einem akuten Verhalten wie einer nächtlichen Session gib zuerst einen schlichten nicht-medizinischen Hinweis. Wenn ein belastendes Muster anhält oder ich darauf eingehe, frage nach Einwilligung und biete einen passenden validierten medtests-Selbsttest an. Verwende nur dessen Score, Quelle und feste Interpretation; verwandle deine Eindrücke nie in ein Label.
+For an immediate behavior, such as a late-night session, start with a plain non-medical suggestion. If a harmful pattern persists, ask for consent before offering a relevant validated medtests screening. Use only the instrument score, source, and fixed interpretation. Never turn your impressions into a label.
 
-Beende mit: (a) was relativ gut gestützt ist, (b) was unklar bleibt, (c) welche sicheren nächsten Schritte oder Fragen für ärztliches/psychotherapeutisches Fachpersonal sinnvoll wären. Wenn Hinweise auf Realitätsverlust, unmittelbare Gefahr oder Selbstgefährdung vorkommen, führe keinen Test und keine spekulative Analyse durch, sondern nutze ausschließlich geprüfte Verweis- und lokale Krisentexte.</textarea><p><button id="copyAnalysis">Prompt kopieren</button></p></section>
-  <section class="card"><h2>Kurzer Gruppentest</h2><p>Jede Testperson nutzt denselben Prompt mit einem kleinen, selbst gewählten und anonymisierten Chat-Ausschnitt. Prüft anschließend: Hat der Agent vorab nach Quellenfreigabe gefragt? Beobachtung und Interpretation getrennt? Gegenbelege genannt? Diagnose und Kausalbehauptungen vermieden? Nutzungsdauer nicht pathologisiert? Vor einem Test Einwilligung eingeholt? Quellen und Daten angegeben?</p></section>
-</main><script>document.getElementById('copyAnalysis').addEventListener('click',async function(){await navigator.clipboard.writeText(document.getElementById('analysisPrompt').value);this.textContent='Kopiert';setTimeout(()=>this.textContent='Prompt kopieren',1800)})</script></body>
+Finish with: (a) what is relatively well supported, (b) what remains unclear, and (c) safe next steps or questions for a qualified professional. If there are signs of immediate danger, self-harm, or possible reality distortion, do not continue normal analysis or offer a test. Use appropriate reviewed referral and local crisis guidance.</textarea><p><button id="copyAnalysis">Copy prompt</button></p></section>
+  <section class="card"><h2>How well did the result fit?</h2><p>Rate it from 1 (not at all) to 10 (very well).</p></section>
+</main><script>document.getElementById('copyAnalysis').addEventListener('click',async function(){await navigator.clipboard.writeText(document.getElementById('analysisPrompt').value);this.textContent='Copied';setTimeout(()=>this.textContent='Copy prompt',1800)})</script></body>
 </html>
