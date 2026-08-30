@@ -4,6 +4,8 @@ A standalone, auditable WebMCP demo for privacy-preserving mental-health self-sc
 
 **Live demo:** https://medtests-webmcp-preview.carpal-cilantro.workers.dev
 
+**For testers:** https://medtests-webmcp-testers.rhp9frgrbw.chatgpt.site
+
 ## What it exposes
 
 - `medtests_list_screenings`
