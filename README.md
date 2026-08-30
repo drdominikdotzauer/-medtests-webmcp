@@ -16,6 +16,8 @@ The browser-native tools call the same-origin MCP endpoint at `/mcp`. A small RE
 
 The optional [chat-context analysis page](https://medtests-webmcp-preview.carpal-cilantro.workers.dev/chat-analysis.html) gives any agent a consent-first prompt for looking for symptom patterns across authorized ChatGPT, Claude, Codex, Gemini, or other transcripts. It separates observations from hypotheses and explicitly forbids diagnosis or causal claims.
 
+The public, privacy-scrubbed [DC AI group pilot protocol](docs/dc-ai-group-test.md) tests Situation 0: a model may notice behavior, but it must not silently label the user. It starts with a plain nudge and offers a validated screen only after consent.
+
 ## Safety and privacy
 
 - screening indications, never diagnoses

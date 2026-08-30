@@ -23,6 +23,10 @@ test('chat analysis protocol asks for source scope and blocks diagnostic causati
   assert.match(protocol.ask_before_analysis.join(' '), /Welche Quellen/);
   assert.match(protocol.rules.join(' '), /Keine Diagnose/);
   assert.match(protocol.rules.join(' '), /keine Kausalität/);
+  assert.match(protocol.rules.join(' '), /Nutzungsdauer allein/);
+  assert.match(protocol.rules.join(' '), /Nie aus dem Prompting-Stil ADHS/);
+  assert.match(protocol.rules.join(' '), /Realitätsverzerrung weder testen noch scoren/);
+  assert.equal(protocol.intervention_ladder.length, 3);
 });
 
 test('GAD-7 is deterministic and answers are not echoed', () => {

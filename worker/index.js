@@ -70,7 +70,8 @@ function chatAnalysisProtocol(language = 'de') {
     ],
     supported_sources: sources,
     output_sections: ['timeline', 'repeated_patterns', 'possible_contributors', 'supporting_evidence', 'contradicting_evidence', 'missing_information', 'safer_next_steps'],
-    rules: ['Analyze only explicitly authorized material.', 'Separate direct quotes or observations from interpretation.', 'Rank hypotheses by support and show uncertainty.', 'Do not diagnose or claim that a chat proves causation.', 'Do not use identifiable third-party or patient data.', 'If immediate danger may be present, stop and surface local crisis resources.'],
+    intervention_ladder: ['Offer a plain non-medical nudge for an immediate behavior such as an overnight session.', 'If a harmful pattern persists or the user engages, ask consent to offer an applicable validated screening.', 'Use only the instrument score, source, and fixed interpretation; never convert model impressions into a label.'],
+    rules: ['Analyze only explicitly authorized material.', 'Separate direct quotes or observations from interpretation.', 'Rank hypotheses by support and show uncertainty.', 'Do not diagnose or claim that a chat proves causation.', 'High usage hours alone are not pathology; look for impairment, distress, or loss of control.', 'Never infer ADHD or another condition from prompting style.', 'For possible reality distortion, do not screen, score, or speculate; use reviewed referral and crisis language only.', 'Do not use identifiable third-party or patient data.', 'If immediate danger may be present, stop and surface local crisis resources.'],
   };
   return {
     language: 'de',
@@ -83,7 +84,8 @@ function chatAnalysisProtocol(language = 'de') {
     ],
     supported_sources: sources,
     output_sections: ['zeitlinie', 'wiederkehrende_muster', 'moegliche_einflussfaktoren', 'stuetzende_belege', 'gegenbelege', 'fehlende_informationen', 'sichere_naechste_schritte'],
-    rules: ['Nur ausdrücklich freigegebenes Material analysieren.', 'Direkte Beobachtungen und Interpretation trennen.', 'Hypothesen nach Belegstärke ordnen und Unsicherheit zeigen.', 'Keine Diagnose stellen und aus Chats keine Kausalität behaupten.', 'Keine identifizierbaren Daten Dritter oder von Patienten verwenden.', 'Bei möglicher unmittelbarer Gefahr abbrechen und lokale Krisenhilfe anzeigen.'],
+    intervention_ladder: ['Bei einem unmittelbaren Verhalten wie einer nächtlichen Session zuerst einen schlichten, nicht-medizinischen Hinweis geben.', 'Wenn ein belastendes Muster anhält oder der Nutzer darauf eingeht, mit Einwilligung einen passenden validierten Test anbieten.', 'Nur Instrumenten-Score, Quelle und feste Interpretation verwenden; Modell-Eindrücke nie in ein Label umwandeln.'],
+    rules: ['Nur ausdrücklich freigegebenes Material analysieren.', 'Direkte Beobachtungen und Interpretation trennen.', 'Hypothesen nach Belegstärke ordnen und Unsicherheit zeigen.', 'Keine Diagnose stellen und aus Chats keine Kausalität behaupten.', 'Hohe Nutzungsdauer allein ist kein Krankheitskriterium; relevant sind Beeinträchtigung, Leidensdruck oder Kontrollverlust.', 'Nie aus dem Prompting-Stil ADHS oder eine andere Erkrankung ableiten.', 'Bei möglicher Realitätsverzerrung weder testen noch scoren oder spekulieren; nur geprüfte Verweis- und Krisentexte verwenden.', 'Keine identifizierbaren Daten Dritter oder von Patienten verwenden.', 'Bei möglicher unmittelbarer Gefahr abbrechen und lokale Krisenhilfe anzeigen.'],
   };
 }
 
